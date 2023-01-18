@@ -55,7 +55,7 @@ describe("Gilded Rose", function () {
     expect(gildedRose.items[0].quality).toBe(0);
   });
 
-  it("sulfuras never decresses in quality", () => {
+  it("sulfuras never decreases in quality", () => {
     const gildedRose = new Shop([
       new Item("Sulfuras, Hand of Ragnaros", 1, 80),
     ]);
