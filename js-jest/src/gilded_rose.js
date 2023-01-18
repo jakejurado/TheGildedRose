@@ -2,7 +2,7 @@
 // Used a linter according to the AirBnB linting standard
 // Improved readability and logic by removing nested if statements from the updateQuality method and implemented a switch.
 // Modularized the code for scalability by creating new methods for each item type in the store.  This also helped with not reusing code.
-// Added properties (such as maxQuality, minQuality, and rate) to the Shop class to make future refactoring easier  (side note, I was not able to do this for the backstage tickets rate increases without making some assumptions, so I left as is)
+// Added properties (such as maxQuality, minQuality, and rate) to the Shop class to make future refactoring easier.
 // Extracted the sellIn updater
 // Improved readability by writing descriptive code and comments
 // Wrote tests to make sure the refactored code works as expected.
