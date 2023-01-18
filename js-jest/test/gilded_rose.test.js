@@ -39,7 +39,7 @@ describe("Gilded Rose", function () {
     expect(gildedRose.items[0].quality).toBe(2);
   });
 
-  it("quality of backstage drops each day by 1 when sellIn is above 0 and below 6", () => {
+  it("quality of backstage drops each day by 3 when sellIn is above 0 and below 6", () => {
     const gildedRose = new Shop([
       new Item("Backstage passes to a TAFKAL80ETC concert", 5, 0),
     ]);
@@ -71,7 +71,7 @@ describe("Gilded Rose", function () {
     expect(gildedRose.items[0].quality).toBe(80);
   });
 
-  it("sulfuras' sellIn value never decreases (although it has no purpose)", () => {
+  it("sulfuras' sellIn value never decreases", () => {
     const gildedRose = new Shop([
       new Item("Sulfuras, Hand of Ragnaros", 1, 80),
     ]);
