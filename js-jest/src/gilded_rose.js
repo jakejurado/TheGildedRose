@@ -8,6 +8,7 @@
 // I wrote descriptive code to make everything easier to read.
 // I wrote tests to make sure the refactored code works as expected.
 // I wrote tests to make sure the new update works as expected.
+// minimized potential errors by accounting for data entry error for sulfuras quality.
 
 class Item {
   constructor(name, sellIn, quality) {
@@ -47,7 +48,8 @@ class Shop {
   }
 
   updateSulfuras(item) {
-    //no logic needed
+    //sets quality to 80 in case quality was entered incorrectly.
+    item.quality = 80;
   }
 
   updateConjured(item) {
@@ -92,6 +94,7 @@ class Shop {
           this.updatePasses(item);
           break;
         case "Sulfuras, Hand of Ragnaros":
+          this.updateSulfuras(item);
           break;
         case "Conjured":
           this.updateConjured(item);

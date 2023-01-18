@@ -63,6 +63,14 @@ describe("Gilded Rose", function () {
     expect(gildedRose.items[0].quality).toBe(80);
   });
 
+  it("the quality sulfuras is always 80", () => {
+    const gildedRose = new Shop([
+      new Item("Sulfuras, Hand of Ragnaros", 1, 78),
+    ]);
+    gildedRose.updateQuality();
+    expect(gildedRose.items[0].quality).toBe(80);
+  });
+
   it("sulfuras' sellIn value never decreases (although it has no purpose)", () => {
     const gildedRose = new Shop([
       new Item("Sulfuras, Hand of Ragnaros", 1, 80),
