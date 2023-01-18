@@ -36,7 +36,7 @@ class Shop {
 
   updatePasses(item) {
     //if concert has passed then item quality is 0
-    if (item.sellIn < this.minQuality) item.quality = this.minQuality;
+    if (item.sellIn < 0) item.quality = this.minQuality;
     else {
       //update quality depending on how close we are to concert (never past maxQuality)
       item.quality++;
